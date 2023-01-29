@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.1 on win32)" generated="20230128 18:05:33.241" rpa="false" schemaversion="3">
+<suite id="s1" name="Resources" source="C:\Users\janal\PycharmProjects\AutomationTesting\Test\resources.robot">
+<test id="s1-t1" name="Search Item" line="12">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<arg>options=add_experimental_option("detach", True)</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230128 18:05:33.410" level="INFO">Opening browser 'chrome' to base url 'https://testautomationpractice.blogspot.com/'.</msg>
+<status status="PASS" starttime="20230128 18:05:33.409" endtime="20230128 18:05:40.459"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230128 18:05:40.460" endtime="20230128 18:05:40.590"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://input[@id='Wikipedia1_wikipedia-search-input']</arg>
+<arg>google.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230128 18:05:40.592" level="INFO">Typing text 'google.com' into text field 'xpath://input[@id='Wikipedia1_wikipedia-search-input']'.</msg>
+<status status="PASS" starttime="20230128 18:05:40.590" endtime="20230128 18:05:40.686"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="Wikipedia1_wikipedia-search-form"]/div/span[2]/span[2]/input</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230128 18:05:40.687" level="INFO">Clicking element 'xpath://*[@id="Wikipedia1_wikipedia-search-form"]/div/span[2]/span[2]/input'.</msg>
+<status status="PASS" starttime="20230128 18:05:40.687" endtime="20230128 18:05:40.764"/>
+</kw>
+<status status="PASS" starttime="20230128 18:05:33.409" endtime="20230128 18:05:40.764"/>
+</test>
+<test id="s1-t2" name="Alert" line="17">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath://button[@onclick='myFunction()']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230128 18:05:40.767" level="INFO">Clicking button 'xpath://button[@onclick='myFunction()']'.</msg>
+<status status="PASS" starttime="20230128 18:05:40.767" endtime="20230128 18:05:40.840"/>
+</kw>
+<kw name="Handle Alert" library="SeleniumLibrary">
+<arg>accept</arg>
+<doc>Handles the current alert and returns its message.</doc>
+<msg timestamp="20230128 18:05:40.841" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<status status="PASS" starttime="20230128 18:05:40.841" endtime="20230128 18:05:40.845"/>
+</kw>
+<status status="PASS" starttime="20230128 18:05:40.766" endtime="20230128 18:05:40.845"/>
+</test>
+<test id="s1-t3" name="Date Picker" line="20">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://*[@id="datepicker"]</arg>
+<arg>01/22/1998</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230128 18:05:40.848" level="INFO">Typing text '01/22/1998' into text field 'xpath://*[@id="datepicker"]'.</msg>
+<status status="PASS" starttime="20230128 18:05:40.847" endtime="20230128 18:05:40.970"/>
+</kw>
+<status status="PASS" starttime="20230128 18:05:40.846" endtime="20230128 18:05:40.972"/>
+</test>
+<test id="s1-t4" name="Select Menu" line="22">
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<arg>xpath://*[@id="speed"]</arg>
+<arg>Medium</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<msg timestamp="20230128 18:05:40.977" level="INFO">Selecting options from selection list 'xpath://*[@id="speed"]' by label Medium.</msg>
+<status status="PASS" starttime="20230128 18:05:40.976" endtime="20230128 18:05:41.079"/>
+</kw>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<arg>xpath://*[@id="files"]</arg>
+<arg>PDF file</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<msg timestamp="20230128 18:05:41.081" level="INFO">Selecting options from selection list 'xpath://*[@id="files"]' by label PDF file.</msg>
+<status status="PASS" starttime="20230128 18:05:41.080" endtime="20230128 18:05:41.171"/>
+</kw>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<arg>xpath://*[@id="number"]</arg>
+<arg>3</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<msg timestamp="20230128 18:05:41.173" level="INFO">Selecting options from selection list 'xpath://*[@id="number"]' by label 3.</msg>
+<status status="PASS" starttime="20230128 18:05:41.172" endtime="20230128 18:05:41.270"/>
+</kw>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<arg>xpath://*[@id="products"]</arg>
+<arg>Yahoo</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<msg timestamp="20230128 18:05:41.275" level="INFO">Selecting options from selection list 'xpath://*[@id="products"]' by label Yahoo.</msg>
+<status status="PASS" starttime="20230128 18:05:41.271" endtime="20230128 18:05:41.346"/>
+</kw>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<arg>xpath://*[@id="animals"]</arg>
+<arg>Avatar</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<msg timestamp="20230128 18:05:41.348" level="INFO">Selecting options from selection list 'xpath://*[@id="animals"]' by label Avatar.</msg>
+<status status="PASS" starttime="20230128 18:05:41.346" endtime="20230128 18:05:41.422"/>
+</kw>
+<status status="PASS" starttime="20230128 18:05:40.974" endtime="20230128 18:05:41.423"/>
+</test>
+<test id="s1-t5" name="Text Label" line="28">
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>xpath://*[@id="Text1"]</arg>
+<arg>Text Labels</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20230128 18:05:41.583" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-46.png"&gt;&lt;img src="selenium-screenshot-46.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230128 18:05:41.583" level="FAIL">Text Labels</msg>
+<status status="FAIL" starttime="20230128 18:05:41.428" endtime="20230128 18:05:41.587"/>
+</kw>
+<status status="FAIL" starttime="20230128 18:05:41.426" endtime="20230128 18:05:41.588">Text Labels</status>
+</test>
+<test id="s1-t6" name="Voluteer Sign Up" line="30">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://*[@id="RESULT_TextField-1"]</arg>
+<arg>Jan Altwin</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230128 18:05:41.591" level="INFO">Typing text 'Jan Altwin' into text field 'xpath://*[@id="RESULT_TextField-1"]'.</msg>
+<msg timestamp="20230128 18:05:41.729" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-47.png"&gt;&lt;img src="selenium-screenshot-47.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230128 18:05:41.729" level="FAIL">Element with locator 'xpath://*[@id="RESULT_TextField-1"]' not found.</msg>
+<status status="FAIL" starttime="20230128 18:05:41.591" endtime="20230128 18:05:41.733"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://*[@id="RESULT_TextField-2"]</arg>
+<arg>Pineda</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230128 18:05:41.733" endtime="20230128 18:05:41.734"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://*[@id="RESULT_TextField-3"]</arg>
+<arg>09454795846</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230128 18:05:41.734" endtime="20230128 18:05:41.734"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://*[@id="RESULT_TextField-4"]</arg>
+<arg>Philippines</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230128 18:05:41.735" endtime="20230128 18:05:41.735"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://*[@id="RESULT_TextField-5"]</arg>
+<arg>Tarlac</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230128 18:05:41.735" endtime="20230128 18:05:41.735"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://*[@id="RESULT_TextField-6"]</arg>
+<arg>janaltwinp@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230128 18:05:41.736" endtime="20230128 18:05:41.736"/>
+</kw>
+<status status="FAIL" starttime="20230128 18:05:41.590" endtime="20230128 18:05:41.737">Element with locator 'xpath://*[@id="RESULT_TextField-1"]' not found.</status>
+</test>
+<test id="s1-t7" name="Double Click" line="37">
+<kw name="Double Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="HTML10"]/div[1]/button</arg>
+<doc>Double clicks the element identified by ``locator``.</doc>
+<msg timestamp="20230128 18:05:41.740" level="INFO">Double clicking element 'xpath://*[@id="HTML10"]/div[1]/button'.</msg>
+<status status="PASS" starttime="20230128 18:05:41.740" endtime="20230128 18:05:42.036"/>
+</kw>
+<status status="PASS" starttime="20230128 18:05:41.739" endtime="20230128 18:05:42.037"/>
+</test>
+<test id="s1-t8" name="Drag and Drop" line="39">
+<kw name="Drag And Drop" library="SeleniumLibrary">
+<arg>xpath://*[@id="draggable"]/p</arg>
+<arg>xpath://*[@id="droppable"]</arg>
+<doc>Drags the element identified by ``locator`` into the ``target`` element.</doc>
+<status status="PASS" starttime="20230128 18:05:42.040" endtime="20230128 18:05:42.636"/>
+</kw>
+<kw name="Drag And Drop" library="SeleniumLibrary">
+<arg>xpath://*[@id="gallery"]/li[1]/img</arg>
+<arg>xpath://*[@id="trash"]</arg>
+<doc>Drags the element identified by ``locator`` into the ``target`` element.</doc>
+<status status="PASS" starttime="20230128 18:05:42.637" endtime="20230128 18:05:43.221"/>
+</kw>
+<kw name="Drag And Drop" library="SeleniumLibrary">
+<arg>xpath://*[@id="gallery"]/li[2]/img</arg>
+<arg>xpath://*[@id="trash"]</arg>
+<doc>Drags the element identified by ``locator`` into the ``target`` element.</doc>
+<status status="PASS" starttime="20230128 18:05:43.223" endtime="20230128 18:05:43.810"/>
+</kw>
+<status status="PASS" starttime="20230128 18:05:42.039" endtime="20230128 18:05:43.810"/>
+</test>
+<test id="s1-t9" name="Radio Input" line="43">
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<arg>name:RESULT_RadioButton-7</arg>
+<arg>Female</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<msg timestamp="20230128 18:05:43.813" level="INFO">Selecting 'Female' from radio button 'name:RESULT_RadioButton-7'.</msg>
+<msg timestamp="20230128 18:05:44.002" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-48.png"&gt;&lt;img src="selenium-screenshot-48.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230128 18:05:44.003" level="FAIL">No radio button with name 'name:RESULT_RadioButton-7' and value 'Female' found.</msg>
+<status status="FAIL" starttime="20230128 18:05:43.813" endtime="20230128 18:05:44.004"/>
+</kw>
+<status status="FAIL" starttime="20230128 18:05:43.812" endtime="20230128 18:05:44.006">No radio button with name 'name:RESULT_RadioButton-7' and value 'Female' found.</status>
+</test>
+<status status="FAIL" starttime="20230128 18:05:33.243" endtime="20230128 18:05:44.009"/>
+</suite>
+<statistics>
+<total>
+<stat pass="6" fail="3" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="6" fail="3" skip="0" id="s1" name="Resources">Resources</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20230128 18:05:33.260" level="ERROR">Error in file 'C:\Users\janal\PycharmProjects\AutomationTesting\Test\resources.robot' on line 2: Importing library 'Seleniumibrary' failed: ModuleNotFoundError: No module named 'Seleniumibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\janal\AppData\Local\Programs\Python\Python311\Scripts\robot.exe
+  C:\Users\janal\AppData\Local\Programs\Python\Python311\python311.zip
+  C:\Users\janal\AppData\Local\Programs\Python\Python311\Lib
+  C:\Users\janal\AppData\Local\Programs\Python\Python311\DLLs
+  C:\Users\janal\AppData\Local\Programs\Python\Python311
+  C:\Users\janal\AppData\Local\Programs\Python\Python311\Lib\site-packages</msg>
+</errors>
+</robot>
